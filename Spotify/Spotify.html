@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e44d08e5ae.js" crossorigin="anonymous"></script>
+    <title>Spotify</title>
+
+    <!-----CSS------>
+    <style type="text/css">
+        nav{background:black;
+            height: 70px;}
+        .musiclist{width:50%;
+                    background-color: rgb(100, 93, 85);}
+
+        .container{height:74vh;
+                    width:70% ;
+                    background-color:black;
+                    color:white;
+                    display: flex;
+                    margin:5px auto;
+                    border-radius: 12px;
+                    padding:10px;
+                    background-image: url(Images/bg.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    overflow-y: scroll;}
+        .bottom{position: sticky;
+                background:black;
+                height:75px;
+                bottom:0px;
+                color:white;}
+        #range{width:90vw;
+                cursor: pointer;}
+        .icon{margin-top: 10px;}
+        .icon i{ cursor: pointer;
+                width:60px;
+                margin-left:50px;}
+        .songitem{height: 40px;
+                display: flex;
+                background-color: rgb(246, 246, 246);
+                color:black;
+                width:120%;
+                margin:12px auto;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 32px;}
+        .songitem img{width:40px;
+                    margin-right:10px;
+                    border-radius: 30px;}
+        .time{margin:0 20px;}
+        .time i{cursor:pointer;}
+        
+        
+        ::-webkit-scrollbar{width:50px;}
+        ::-webkit-scrollbar-track{box-shadow: 10px;
+                                    border-radius: 10px;}
+        ::-webkit-scrollbar-thumb{color:white;}
+        a:active{color:white;}
+        a:visited{color:white;}
+        a:hover{color:red;
+                transition-duration: 1s;}
+        .nav-link{padding-bottom: 13px;}
+        .songitem:hover{color:white;
+                        background:linear-gradient(black,grey);
+                        box-shadow: 0px 1px grey; 
+                        transition-duration: 1s;}
+    </style>
+</head>
+<body>
+        <!-----_Nav Bar-->
+        <nav class="navbar  text-white">
+            <ul class="navbar nav">
+                <li class="nav-item"><a href=""><img src="Images/spotify.jpg" width="50px" >Spotify</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+       <!--------Song List----->
+    <div class="container">
+        <div class="musicList">
+            <h3>Punjabi Songs List</h3>
+            <div clas="songss">
+                <div class="songitem">
+                    <img src="Images/10.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay fa-play-circle" id="0"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/1.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay  fa-play-circle" id="1"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/2.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><i class="fa-solid songitemplay  fa-play-circle"  id="2"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/3.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay  fa-play-circle" id="3"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/4.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay  fa-play-circle" id="4"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/5.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay  fa-play-circle"  id="5"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/6.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay  fa-play-circle" id="6"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/6.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay  fa-play-circle" id="7"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/6.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay  fa-play-circle" id="8"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/6.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay  fa-play-circle" id="9"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/6.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay  fa-play-circle" id="10"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/6.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay  fa-play-circle" id="11"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/6.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay  fa-play-circle" id="12"></i></span></span>
+                </div>
+                <div class="songitem">
+                    <img src="Images/6.jpg"><span class="songName">Let me Love You</span>
+                    <span class="songlistplay"> <span class="time"><span id="total"></span><i class="fa-solid songitemplay  fa-play-circle" id="13"></i></span></span>
+                </div>
+    
+            </div>
+        </div>
+        <div id="songsName"></div>
+    </div>
+    <!-------Bottom Part---->
+    <div class="bottom text-center"> 
+        <input type="range" min="0" max="100" id="range" value="0" class="custom-range" onchange="change()">
+        <div class="icon">
+            <span id="timerun"></span> <span id="totaltime"></span>
+        <i class="fa-solid fa-2x fa-backward-fast" onclick="previous()"></i>
+        <i class="fa-solid fa-2x fa-play-circle" id="masterplay" onclick="play()"></i>
+        <i class="fa-solid fa-2x fa-forward-fast" onclick="next()"></i>
+        </div>
+    </div>
+    
+
+
+    <!------Script----->
+    <script src="spotify.js"></script>
+</body>
+</html>
